@@ -1,0 +1,9 @@
+<h4>LISTADO</h4>
+<ul class="list-group">
+    <li *ngFor="let character of characterList; let i = index"
+    class="list-group-item">
+        <span class="text-primary">{{i+1}}.-</span>
+        {{character.name}} - power: {{character.power}}
+        <button (click)="onDeleteCharacter(character.id)">X</button>
+    </li>
+</ul>

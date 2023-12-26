@@ -1,0 +1,15 @@
+<h4>AGREGAR PJ</h4>
+<form class="row" (ngSubmit)="emitCharacter()">
+    <input type="text" 
+    [(ngModel)]="character.name"
+    name="name"
+    >
+    <input type="number"  
+    [(ngModel)]="character.power"
+    name="power"
+    >
+    <button type="submit" class="btn btn-primary">
+    AGREGAR</button>
+
+    <pre>{{character | json}}</pre>
+</form>
